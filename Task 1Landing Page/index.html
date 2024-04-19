@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=material+Icons">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .column {
+        flex-basis: 40%;
+    }
+
+    .column img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact {
+        background-color: #bb3f3f;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h2{
+        color:#0c0c0c;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    p{
+        color: #111111;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .cta-button{
+        background-color: #4cAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+    border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+
+    .contact-form{
+        max-width: 600px;
+        margin: 0;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 2px 10px rgba(red, green, blue, alpha);
+    }
+    .input-group{
+        margin-bottom: 20px;
+    }
+    label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    textarea{
+        height: 150px;
+    }
+    button[type="submit"] {
+        background-color: #4cAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .testimonial{
+        margin-bottom: 20px;
+    }
+    .testimonial img {
+        width: 100px;
+        border-radius: 50%;
+        margin-right: 10px;
+        float: left;
+    }
+    .testimonial p{
+        font-style: italic;
+    }
+    .testimonial cite{
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .social-icons a{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .social-icons img{
+        width: 30px;
+        height: 30px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Delighted To Have You Here!!</h1>
+    <div class="row">
+        <div class="column">
+            <img src=" C:\Users\siqed\oasisinfobyte\Task 1Landing Page\images\image1.png"
+            alt="image 1" style="width: 500px;height: 100px;" >
+            <p>Our friendly stuff ready to give you the best money can buy always</p>
+        </div>
+        <div class="column">
+            <img src="C:\Users\siqed\oasisinfobyte\Task 1Landing Page\images\image2.jpg"
+            alt="image 2" style="width: 500px;height: 600px;">
+            <p>We can assure you that you will get the required support</p>
+        </div>
+        <div class="column">
+            <img src="C:\Users\siqed\oasisinfobyte\Task 1Landing Page\images\image3.png"
+            alt="image 3" style="width: 500px;height: 600px;">
+            <p>Everything secured at an affordable price</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: siqedilemhlongo@gmail.com</p>
+        <p>Phone: 0634733398</p>
+    </div>
+    <h2>Discover the power of our products</h2>
+    <p>Our innovative solution helps businesses thrive in a digital world. With cutting-edge features and unrivaled support, we are your partner for success </p>
+    <button type="button"
+    class="cta-button">Sign Up Now</button>
+ <div class="contact-form">
+        <form
+        action="contact_form_handler.php"
+        method="post">
+    <div
+class="input-group">
+<label
+for="name">Name:</label>
+<input
+type="text"  id="name" name="name"
+required>
+</div>
+<div
+class="input-group">
+<label
+for="email">Email:</label>
+<input
+type="email" id="email" name="email"
+required>
+</div>
+<div
+class="input-group">
+<label
+for="message">Message:</label>
+<textarea
+id="message" name="message"
+required></textarea>
+</div>
+<div
+class="input-group">
+<button
+type="submit">Send Message</button>
+</div>
+</form>
+<form
+action="contact_form_handler.php"
+method="post">
+</form>
+    </div>
+</div>
+<div class="testimonial">
+    <img src="programming.gif" alt="Computer man"
+    style="width: 48px;height: 48px;">
+    <p>Did my company's website with them and they are the best, delivered in time, the website is easy and simple to understand even my clients find it easy</p>
+    <cite>Chris Mgabhi,CEO, Mgabhi Transports</cite>
+</div>
+<div class="social-icons">
+    <a
+    href="https://www.facebook.com/SiqedileMhlongo">
+<i class="social-icons">facebook</i></a>
+<a
+href="https://www.linkedin.com/SiqedileMhlongo">
+<i class="social-icons">Linkedin</i></a>
+         <a
+
+href="https://www.instagram.com/SqedileMhlongo">
+<i class="social-icons">instagram</i></a>
+</div>
+</body>
+</html>
